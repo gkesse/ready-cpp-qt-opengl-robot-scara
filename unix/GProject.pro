@@ -8,5 +8,4 @@ RCC_DIR = build
 CONFIG += release
 QT += widgets
 
-SOURCES += \
-    ../src/main.cpp
+include(../src/GMain.pri)
