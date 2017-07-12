@@ -1,11 +1,12 @@
-# Génération du fichier Makefile
+# Construction du Projet
 
-Générez le fichier Makefile nécessaire à la compilation du projet 
-en lançant le script :  
-    cmd_qmake.bat
+La construction du projet nécessite les scripts suivants :
 
-# Compilation du Projet
+* Pour générer le fichier Makefile : **cmd_qmake.bat**
+* Pour ouvrir l'IDE Qt Creator : **cmd_qtcreator.bat**
+* Pour compiler le projet : **cmd_compile.bat**
+* Pour exécuter le projet : **cmd_run.bat**
+* Pour nettoyer le projet : **cmd_qmake.bat**
 
-# Exécution du Projet
 
-# Nettoyage du Projet
+
