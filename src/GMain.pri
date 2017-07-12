@@ -5,3 +5,6 @@ INCLUDEPATH += \
 
 SOURCES += \
     $$PWD/main.cpp
+
+RESOURCES += \
+    $$PWD/resource.qrc

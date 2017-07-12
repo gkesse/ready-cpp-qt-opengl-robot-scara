@@ -1,0 +1,148 @@
+/*===============================================*/
+/* QWidget */
+/*===============================================*/
+
+QWidget {
+    font-family: arial;
+    font-size: 14px;
+    color: white;
+    background: transparent;
+    border: none;
+}
+
+/*===============================================*/
+/* QPushButton Rectangle */
+/*===============================================*/
+
+QPushButton {
+    padding: 5px;
+    background: rgba(255,255,255,0.2);
+}
+
+QPushButton:hover {
+    background: rgba(255,255,255,0.3);
+}
+
+QPushButton:pressed {
+    font-size: 12px;
+}
+
+/*===============================================*/
+/* QPushButton Round */
+/*===============================================*/
+
+GBasicTimer QPushButton,
+GFloatWidget QPushButton {
+    background: rgba(1,1,1,0.3);
+    border-radius: 20px;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    margin: 0;
+}
+
+GBasicTimer QPushButton:hover,
+GFloatWidget QPushButton:hover {
+    background: rgba(1,1,1,0.5);
+}
+
+GBasicTimer QPushButton:pressed,
+GFloatWidget QPushButton:pressed {
+    background: rgba(1,1,1,0.3);
+}
+
+/*===============================================*/
+/* QHeaderView */
+/*===============================================*/
+
+QHeaderView::section {
+    background: rgba(255,255,250,0.1);
+    color: white;
+    border: none;
+    border-right: 1px solid rgba(255,255,255,0.2);
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    padding: 5px;
+}
+
+/*===============================================*/
+/* QTreeView */
+/*===============================================*/
+
+QTreeView {
+    show-decoration-selected: 1;
+    alternate-background-color: transparent;
+    border: 1px solid rgba(255,255,255,0.2);
+}
+
+QTreeView::item {
+    border-right: 1px solid rgba(255,255,255,0.2);
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+QTreeView::item:hover {
+    background: rgba(255,255,255,0.3);
+}
+
+QTreeView::item:selected {
+    border: 1px solid rgba(255,255,255,0.2);
+}
+
+QTreeView::item:selected:active{
+    background: rgba(255,255,255,0.2);
+}
+
+QTreeView::item:selected:!active {
+    background: rgba(255,255,255,0.2);
+    color: white;
+}
+
+/*===============================================*/
+/* QTextEdit */
+/*===============================================*/
+
+QTextEdit {
+    border: 1px solid rgba(255,255,255,0.2);
+}
+
+/*===============================================*/
+/* QSplashScreen */
+/*===============================================*/
+
+QSplashScreen {
+    padding: 50px;
+}
+
+/*===============================================*/
+/* Border */
+/*===============================================*/
+
+GPainter,
+GMessage,
+GActiveX,
+GBasicTimer,
+GFloatWidget,
+GFileDialog,
+GTreeWidget {
+    border: 1px solid rgba(255,255,255,0.2);
+}
+
+/*===============================================*/
+/* Background */
+/*===============================================*/
+
+GMainWindow {
+    background: #051039;
+}
+
+GMainWindow QWidget#m_work {
+    background: rgba(255,255,255,0.2);
+}
+
+/*===============================================*/
+/* Padding */
+/*===============================================*/
+
+GBasicTimer QLabel {
+    padding: 50px;
+}
+
