@@ -1,10 +1,10 @@
+#include "GMainWindow.h"
 #include <QApplication>
-#include <QWidget>
 
 int main(int argc, char** argv) {
     QApplication app(argc, argv);
 
-    QWidget* m_mainWindow = new QWidget;
+    GMainWindow* m_mainWindow = new GMainWindow;
     m_mainWindow->show();
 
     return app.exec();
