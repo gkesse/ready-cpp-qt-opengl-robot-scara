@@ -26,4 +26,4 @@ Le développement de l'application **ReadyDB** a nécessité les technologies suiva
 * Base de données NoSQL: **MongoDB, LevelDB**
 * Patron de Conception : **Singleton, Observateur, Fabrique, Stratégie**
 * Architecture : **MVC**
-* Cible : **Windows, Linux**
+* Cible : **Windows, UNIX**
