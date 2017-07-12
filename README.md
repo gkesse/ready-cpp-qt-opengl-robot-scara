@@ -1,6 +1,7 @@
 # Auteur
 
-Je suis **Gerard KESSE**,  
+Je suis 
+[Gerard KESSE](http://89.80.46.24:8855/presentation/ "Accédez à mon site web (ReadyDev)"),  
 Ingénieur en Développement Informatique C/C++/Qt,  
 Avec à la fois des compétences en Systèmes Embarqués et en Robotique.  
 
@@ -12,7 +13,7 @@ Avec à la fois des compétences en Systèmes Embarqués et en Robotique.
 
 ReadyDB est une Interface de Gestion de Bases de Données.  
 C'est une application développé et maintenu par 
-[Gerard KESSE](http://89.80.46.24:8855 "Accédez à mon site web (ReadyDev)").  
+[Gerard KESSE](http://89.80.46.24:8855/presentation/ "Accédez à mon site web (ReadyDev)").
 
 # Technologies
 
