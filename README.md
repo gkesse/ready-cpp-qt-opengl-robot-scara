@@ -18,7 +18,7 @@ C'est une application développé et maintenu par
 
 Le développement de l'application **ReadyDB** a nécessité les technologies suivantes :
 
-* Langages : **C/C++**
+* Langages : **C/C++, SQL**
 * Interface Homme-Machine : **Qt**
 * Base de données embarquée: **SQLite**
 * Base de données relationnelle: **MySQL, PostgreSQL**
