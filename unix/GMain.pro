@@ -9,4 +9,4 @@ CONFIG += release
 QT += widgets
 
 SOURCES += \
-    main.cpp
+    ../src/main.cpp
