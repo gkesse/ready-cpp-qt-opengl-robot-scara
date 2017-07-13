@@ -5,11 +5,13 @@
 #include <QSplashScreen>
 #include <QColor>
 
-class GSplashScreen : public QObject { 
+class GSplashScreen : public QObject {
     Q_OBJECT
     
+private:
+    GSplashScreen();
+
 public:
-    GSplashScreen(QObject* parent = 0);
     ~GSplashScreen();
 
 public:

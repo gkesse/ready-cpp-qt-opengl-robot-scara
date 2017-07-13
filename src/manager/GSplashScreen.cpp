@@ -4,7 +4,7 @@
 
 GSplashScreen* GSplashScreen::m_instance = 0;
 
-GSplashScreen::GSplashScreen(QObject* parent) : QObject(parent) {
+GSplashScreen::GSplashScreen() {
     m_splash = new QSplashScreen;
     m_splash->setObjectName("m_splash");
     
