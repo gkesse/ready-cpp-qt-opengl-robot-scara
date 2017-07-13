@@ -10,7 +10,8 @@ int main(int argc, char** argv) {
 
     GSplashScreen::Instance()->setPixmap(":/img/splash.png");
     GSplashScreen::Instance()->show();
-    GSplashScreen::Instance()->showMessage("GStyle : loading style module...");
+    GSplashScreen::Instance()->showMessage("GStyle : loading Style module...");
+    //GSplashScreen::Instance()->setDelay();
 
     GMainWindow* m_mainWindow = new GMainWindow;
     m_mainWindow->show();

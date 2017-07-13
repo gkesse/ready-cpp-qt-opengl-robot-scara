@@ -13,19 +13,23 @@
   <property name="windowTitle">
    <string>GMainWindow</string>
   </property>
-  <layout class="QGridLayout" name="gridLayout">
+  <layout class="QGridLayout" name="gridLayout" columnstretch="0,1">
    <item row="0" column="0">
-    <widget class="QLabel" name="label">
-     <property name="text">
-      <string>Hello World</string>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
-     </property>
-    </widget>
+    <widget class="GMenu" name="m_menu" native="true"/>
+   </item>
+   <item row="0" column="1">
+    <widget class="QWidget" name="widget_2" native="true"/>
    </item>
   </layout>
  </widget>
+ <customwidgets>
+  <customwidget>
+   <class>GMenu</class>
+   <extends>QWidget</extends>
+   <header>GMenu.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
  <resources/>
  <connections/>
 </ui>

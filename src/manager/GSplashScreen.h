@@ -19,9 +19,10 @@ public:
 
 public:
     void setPixmap(const QString& file);
+    void setDelay(const int& delay = 5000);
     void show();
-    void showMessage(const QString& msg, const QColor& color = QColor("#f67b20"));
-    void finish(QWidget* mainWin);
+    void showMessage(const QString& msg, const QColor& color = QColor("orange"));
+    void finish(QWidget* mainWindow);
     
 private:
     static GSplashScreen* m_instance;

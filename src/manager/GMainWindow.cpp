@@ -1,11 +1,13 @@
 #include "GMainWindow.h"
 #include "ui_GMainWindow.h"
 #include "GSplashScreen.h"
+#include "GMessageView.h"
 
-GMainWindow::GMainWindow(QWidget *parent) :
+GMainWindow::GMainWindow(QWidget* parent) :
     QWidget(parent), ui(new Ui::GMainWindow) {
-    GSplashScreen::Instance()->showMessage("GMainWindow : loading mainwindow module...");
     ui->setupUi(this);
+    GMessageView::Instance();
+    GSplashScreen::Instance()->showMessage("GMainWindow : loading MainWindow module...");
 }
 
 GMainWindow::~GMainWindow() {

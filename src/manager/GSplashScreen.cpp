@@ -5,9 +5,7 @@
 GSplashScreen* GSplashScreen::m_instance = 0;
 
 GSplashScreen::GSplashScreen() {
-    m_splash = new QSplashScreen;
-    m_splash->setObjectName("m_splash");
-    
+    m_splash = new QSplashScreen;    
     m_align = Qt::AlignLeft | Qt::AlignVCenter;
 }
 
@@ -27,15 +25,19 @@ void GSplashScreen::setPixmap(const QString& file) {
     m_splash->setPixmap(QPixmap(file));
 }
 
+void GSplashScreen::setDelay(const int& delay) {
+    QThread::msleep(delay);
+}
+
 void GSplashScreen::show() {
     m_splash->show();
 }
 
 void GSplashScreen::showMessage(const QString& msg, const QColor& color) {
     m_splash->showMessage(msg, m_align, color);
-    QThread::msleep(5000);
+    QThread::msleep(200);
 }
 
-void GSplashScreen::finish(QWidget* mainWin) {
-    m_splash->finish(mainWin);
+void GSplashScreen::finish(QWidget* mainWindow) {
+    m_splash->finish(mainWindow);
 }
