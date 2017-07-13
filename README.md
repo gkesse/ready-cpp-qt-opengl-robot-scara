@@ -15,6 +15,8 @@ Avec à la fois des compétences en Systèmes Embarqués et en Robotique.
 C'est une application développé et maintenu par 
 [Gerard KESSE](http://89.80.46.24:8855/presentation/ "Accédez à mon site web (ReadyDev)").
 
+* **ReadyDB SplashScreen**
+
 ![ReadyDB-SplashScreen](https://raw.githubusercontent.com/gkesse/ReadyDB/master/img/ReadyDB-SplashScreen.png)
 
 # Technologies
