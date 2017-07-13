@@ -15,7 +15,7 @@ Avec à la fois des compétences en Systèmes Embarqués et en Robotique.
 C'est une application développé et maintenu par 
 [Gerard KESSE](http://89.80.46.24:8855/presentation/ "Accédez à mon site web (ReadyDev)").
 
-![Zozor](http://uploads.siteduzero.com/files/420001_421000/420263.png)
+![ReadyDB-SplashScreen](https://raw.githubusercontent.com/gkesse/ReadyDB/master/img/ReadyDB-SplashScreen.png)
 
 # Technologies
 
