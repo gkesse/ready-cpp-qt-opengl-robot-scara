@@ -6,8 +6,10 @@ FORMS += \
 
 HEADERS += \
     $$PWD/GMainWindow.h \
-    $$PWD/GStyle.h
+    $$PWD/GStyle.h \
+    $$PWD/GSplashScreen.h
 
 SOURCES += \
     $$PWD/GMainWindow.cpp \
-    $$PWD/GStyle.cpp
+    $$PWD/GStyle.cpp \
+    $$PWD/GSplashScreen.cpp
