@@ -1,7 +1,11 @@
 #ifndef _GStyle_
 #define _GStyle_
 
-class GStyle {
+#include <QObject>
+
+class GStyle : public QObject {
+    Q_OBJECT
+
 private:
     GStyle();
 
