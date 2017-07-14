@@ -14,6 +14,9 @@ public:
     GMainWindow(QWidget* parent = 0);
     ~GMainWindow();
 
+protected:
+    void closeEvent(QCloseEvent *event);
+
 private:
     Ui::GMainWindow* ui;
 };

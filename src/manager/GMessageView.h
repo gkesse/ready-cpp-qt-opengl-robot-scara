@@ -26,6 +26,12 @@ private:
 private:
     void setPosition();
 
+public:
+    void show(const QString& data);
+
+public slots:
+    void slotClearClicked();
+
 private:
     static GMessageView* m_instance;
     Ui::GMessageView* ui;

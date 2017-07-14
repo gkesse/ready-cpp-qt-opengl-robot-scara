@@ -17,6 +17,7 @@ GMenu::~GMenu() {
 
 void GMenu::createObjects() {
     ui->m_title->setIcon(GPicto::Instance()->getPicto(fa::book));
+    ui->m_openDatabase->setIcon(GPicto::Instance()->getPicto(fa::folderopen));
 }
 
 void GMenu::createConnexions() {

@@ -13,7 +13,7 @@ GMessageView::GMessageView() :
     createObjects();
     createConnexions();
     setPosition();
-    show();
+    QWidget::show();
     GSplashScreen::Instance()->showMessage("GMessageView : loading MessageView module...");
 }
 
@@ -30,11 +30,12 @@ GMessageView* GMessageView::Instance() {
 }
 
 void GMessageView::createObjects() {
-
+    ui->m_title->setIcon(GPicto::Instance()->getPicto(fa::comments));
+    ui->m_clear->setIcon(GPicto::Instance()->getPicto(fa::trash));
 }
 
 void GMessageView::createConnexions() {
-
+    connect(ui->m_clear, SIGNAL(clicked()), this, SLOT(slotClearClicked()));
 }
 
 void GMessageView::setPosition() {
@@ -49,4 +50,12 @@ void GMessageView::setPosition() {
     int m_viewY = m_desktopH - m_viewH - 50;
 
     setGeometry(m_viewX, m_viewY, m_viewW, m_viewH);
+}
+
+void GMessageView::show(const QString& data) {
+    ui->m_message->append(data);
+}
+
+void GMessageView::slotClearClicked() {
+    ui->m_message->clear();
 }

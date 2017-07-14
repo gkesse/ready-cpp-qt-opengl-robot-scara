@@ -1,5 +1,5 @@
 /*===============================================*/
-/* Global Style */
+/* Common Style */
 /*===============================================*/
 
 /*-----------------------------------------------*/
@@ -14,23 +14,36 @@ QWidget {
     border: none;
 }
 
+/*===============================================*/
+/* Global Style */
+/*===============================================*/
+
 /*-----------------------------------------------*/
-/* QLabel */
+/* QFrame */
 /*-----------------------------------------------*/
 
-QLabel {
-    background: rgba(255,255,255,0.2);
-    padding: 6px;
-    font-size: 16px;
-    font-weight: bold;
-    text-align: right;
+QFrame#m_content {
+    border : 1px solid rgba(255,255,255,0.2);
+}
+
+/*-----------------------------------------------*/
+/* QHeaderView */
+/*-----------------------------------------------*/
+
+QHeaderView::section {
+    background: rgba(255,255,250,0.1);
+    color: white;
+    border: none;
+    border-right: 1px solid rgba(255,255,255,0.2);
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    padding: 5px;
 }
 
 /*-----------------------------------------------*/
 /* QPushButton */
 /*-----------------------------------------------*/
 
-/* Rectangle Button */
+/* QPushButton Rectangle */
 QPushButton {
     padding: 6px;
     background: rgba(255,255,255,0.2);
@@ -41,14 +54,15 @@ QPushButton:hover {
 }
 
 QPushButton:pressed {
+    background: rgba(255,255,255,0.2);
     font-size: 12px;
 }
 
-/* Title Button */
+/* QPushButton Title */
 QPushButton#m_title {
     font-size: 16px;
     font-weight: bold;
-    text-align: left;
+    text-align: center;
 }
 
 QPushButton#m_title:hover {
@@ -59,7 +73,7 @@ QPushButton#m_title:pressed {
     font-size: 16px;
 }
 
-/* Round Button */
+/* QPushButton Round */
 GBasicTimer QPushButton,
 GFloatWidget QPushButton {
     background: rgba(1,1,1,0.3);
@@ -81,16 +95,13 @@ GFloatWidget QPushButton:pressed {
 }
 
 /*-----------------------------------------------*/
-/* QHeaderView */
+/* QTextEdit */
 /*-----------------------------------------------*/
 
-QHeaderView::section {
-    background: rgba(255,255,250,0.1);
-    color: white;
-    border: none;
-    border-right: 1px solid rgba(255,255,255,0.2);
-    border-bottom: 1px solid rgba(255,255,255,0.2);
-    padding: 5px;
+QTextEdit {
+    background: rgba(255,255,255,0.2);
+    border: 1px solid rgba(255,255,255,0.2);
+    padding: 9px;
 }
 
 /*-----------------------------------------------*/
@@ -125,17 +136,18 @@ QTreeView::item:selected:!active {
     color: white;
 }
 
-/*-----------------------------------------------*/
-/* QTextEdit */
-/*-----------------------------------------------*/
-
-QTextEdit {
-    border: 1px solid rgba(255,255,255,0.2);
-}
-
 /*===============================================*/
 /* Particular Style */
 /*===============================================*/
+
+/*-----------------------------------------------*/
+/* Background */
+/*-----------------------------------------------*/
+
+GMainWindow,
+GMessageView {
+    background: #051039;
+}
 
 /*-----------------------------------------------*/
 /* Border */
@@ -144,23 +156,4 @@ GMenu {
     border: 1px solid rgba(255,255,255,0.2);
 }
 
-/*-----------------------------------------------*/
-/* Background */
-/*-----------------------------------------------*/
-
-GMainWindow {
-    background: #051039;
-}
-
-GMainWindow QWidget#m_work {
-    background: rgba(255,255,255,0.2);
-}
-
-/*-----------------------------------------------*/
-/* Padding */
-/*-----------------------------------------------*/
-
-GBasicTimer QLabel {
-    padding: 50px;
-}
 
