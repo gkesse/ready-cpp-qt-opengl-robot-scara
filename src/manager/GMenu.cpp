@@ -2,7 +2,6 @@
 #include "ui_GMenu.h"
 #include "GSplashScreen.h"
 #include "GPicto.h"
-#include "GJson.h"
 #include "GMessageView.h"
 
 GMenu::GMenu(QWidget* parent) :
@@ -19,18 +18,17 @@ GMenu::~GMenu() {
 
 void GMenu::createObjects() {
     ui->m_title->setIcon(GPicto::Instance()->getPicto(fa::book));
+    ui->m_create->setIcon(GPicto::Instance()->getPicto(fa::cog));
+    ui->m_open->setIcon(GPicto::Instance()->getPicto(fa::folderopen));
 
-    GJson::Instance()->load("../../src/res/json/menu.json");
-    QStringList m_menuName = GJson::Instance()->getArray("menu", "name");
-
-    for(int i = 0; i < m_menuName.size(); i++) {
-        QPushButton *m_button = new QPushButton;
-        m_button->setText(m_menuName.at(i));
-        m_button->setIcon(GPicto::Instance()->getPicto("book"));
-        ui->m_menuLayout->addWidget(m_button);
-    }
+    int m_count = 0;
+    m_signalMapper = new QSignalMapper(this);
+    m_signalMapper->setMapping(ui->m_create, m_count++);
+    m_signalMapper->setMapping(ui->m_open, m_count++);
 }
 
 void GMenu::createConnexions() {
-
+    connect(ui->m_create, SIGNAL(clicked()), m_signalMapper, SLOT(map()));
+    connect(ui->m_open, SIGNAL(clicked()), m_signalMapper, SLOT(map()));
+    connect(m_signalMapper, SIGNAL(mapped(int)), this, SIGNAL(emitMenuClicked(int)));
 }

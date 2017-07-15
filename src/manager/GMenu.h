@@ -3,6 +3,7 @@
 
 #include <QWidget>
 #include <QFrame>
+#include <QSignalMapper>
 
 namespace Ui {
 class GMenu;
@@ -19,8 +20,12 @@ private:
     void createObjects();
     void createConnexions();
 
+signals:
+    void emitMenuClicked(const int&);
+
 private:
     Ui::GMenu* ui;
+    QSignalMapper *m_signalMapper;
 };
 
 #endif

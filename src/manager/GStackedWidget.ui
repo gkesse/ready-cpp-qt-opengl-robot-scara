@@ -31,8 +31,11 @@
    </property>
    <item row="0" column="0">
     <widget class="QStackedWidget" name="m_stackedWidget">
-     <widget class="GOpenDatabase" name="page"/>
-     <widget class="GCreateDatabase" name="page_2"/>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="GCreateDatabase" name="m_create"/>
+     <widget class="GOpenDatabase" name="m_open"/>
     </widget>
    </item>
   </layout>

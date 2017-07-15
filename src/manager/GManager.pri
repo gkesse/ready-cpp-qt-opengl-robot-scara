@@ -20,8 +20,7 @@ HEADERS += \
     $$PWD/GMessageView.h \
     $$PWD/GStackedWidget.h \
     $$PWD/GOpenDatabase.h \
-    $$PWD/GCreateDatabase.h \
-    $$PWD/GJson.h
+    $$PWD/GCreateDatabase.h
 
 SOURCES += \
     $$PWD/GMainWindow.cpp \
@@ -32,5 +31,4 @@ SOURCES += \
     $$PWD/GMessageView.cpp \
     $$PWD/GStackedWidget.cpp \
     $$PWD/GOpenDatabase.cpp \
-    $$PWD/GCreateDatabase.cpp \
-    $$PWD/GJson.cpp
+    $$PWD/GCreateDatabase.cpp

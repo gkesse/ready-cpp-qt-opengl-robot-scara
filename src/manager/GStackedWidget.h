@@ -20,7 +20,7 @@ private:
     void createConnexions();
 
 signals:
-    void emitMenuClicked(const int& index);
+    void emitMenuClicked(const int&);
 
 private:
     Ui::GStackedWidget* ui;

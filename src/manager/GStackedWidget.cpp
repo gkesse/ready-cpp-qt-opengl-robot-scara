@@ -19,5 +19,5 @@ void GStackedWidget::createObjects() {
 }
 
 void GStackedWidget::createConnexions() {
-    //connect(this, SIGNAL(emitMenuClicked(int)), ui->m_stackedWidget, SLOT(setCurrentIndex(int)));
+    connect(this, SIGNAL(emitMenuClicked(int)), ui->m_stackedWidget, SLOT(setCurrentIndex(int)));
 }

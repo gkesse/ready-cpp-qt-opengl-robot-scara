@@ -79,7 +79,7 @@
           <number>0</number>
          </property>
          <item row="0" column="0">
-          <widget class="QPushButton" name="m_openDatabase">
+          <widget class="QPushButton" name="m_create">
            <property name="cursor">
             <cursorShape>PointingHandCursor</cursorShape>
            </property>
@@ -102,7 +102,7 @@
           </spacer>
          </item>
         </layout>
-        <zorder>m_openDatabase</zorder>
+        <zorder>m_create</zorder>
         <zorder>horizontalSpacer</zorder>
        </widget>
       </item>

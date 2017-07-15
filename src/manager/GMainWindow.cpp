@@ -22,7 +22,7 @@ void GMainWindow::createObjects() {
 }
 
 void GMainWindow::createConnexions() {
-
+    connect(ui->m_menu, SIGNAL(emitMenuClicked(int)), ui->m_workspace, SIGNAL(emitMenuClicked(int)));
 }
 
 void GMainWindow::closeEvent(QCloseEvent *event) {

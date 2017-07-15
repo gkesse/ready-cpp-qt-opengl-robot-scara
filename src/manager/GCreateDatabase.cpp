@@ -17,6 +17,7 @@ GCreateDatabase::~GCreateDatabase() {
 
 void GCreateDatabase::createObjects() {
     ui->m_title->setIcon(GPicto::Instance()->getPicto(fa::cog));
+    ui->m_create->setIcon(GPicto::Instance()->getPicto(fa::plus));
 }
 
 void GCreateDatabase::createConnexions() {

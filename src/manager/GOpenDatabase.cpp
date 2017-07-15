@@ -17,6 +17,8 @@ GOpenDatabase::~GOpenDatabase() {
 
 void GOpenDatabase::createObjects() {
     ui->m_title->setIcon(GPicto::Instance()->getPicto(fa::folderopen));
+    ui->m_open->setIcon(GPicto::Instance()->getPicto(fa::folderopeno));
+
 }
 
 void GOpenDatabase::createConnexions() {
