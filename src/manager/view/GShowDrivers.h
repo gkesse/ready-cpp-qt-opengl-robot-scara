@@ -1,19 +1,19 @@
-#ifndef _GCreateDatabase_
-#define _GCreateDatabase_
+#ifndef _GShowDrivers_
+#define _GShowDrivers_
 
 #include <QWidget>
 #include <QFrame>
 
 namespace Ui {
-class GCreateDatabase;
+class GShowDrivers;
 }
 
-class GCreateDatabase : public QFrame {
+class GShowDrivers : public QFrame {
     Q_OBJECT
 
 public:
-    GCreateDatabase(QWidget* parent = 0);
-    ~GCreateDatabase();
+    GShowDrivers(QWidget* parent = 0);
+    ~GShowDrivers();
 
 private:
     void createObjects();
@@ -23,7 +23,7 @@ public slots:
     void slotCreateClicked();
 
 private:
-    Ui::GCreateDatabase* ui;
+    Ui::GShowDrivers* ui;
 };
 
 #endif

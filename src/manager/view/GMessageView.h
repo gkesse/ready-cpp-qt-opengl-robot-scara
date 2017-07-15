@@ -28,6 +28,7 @@ private:
 
 public:
     void showData(const QString& data, const QString& name = "");
+    void showData(const char* data, const QString& name = "");
     void showData(const bool& data, const QString& name = "");
     void showData(const int& data, const QString& name = "");
     void showData(const double& data, const QString& name = "");

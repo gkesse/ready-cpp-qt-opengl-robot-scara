@@ -2,6 +2,7 @@
 #include "ui_GMainWindow.h"
 #include "GSplashScreen.h"
 #include "GMessageView.h"
+#include "GDatabaseAccess.h"
 #include <QApplication>
 #include <QTimer>
 
@@ -10,7 +11,7 @@ GMainWindow::GMainWindow(QWidget* parent) :
     ui->setupUi(this);
     createObjects();
     createConnexions();
-    GSplashScreen::Instance()->showMessage("GMainWindow : loading MainWindow module...");
+    GSplashScreen::Instance()->showMessage("GMainWindow : loading GMainWindow module...");
 }
 
 GMainWindow::~GMainWindow() {
@@ -18,6 +19,7 @@ GMainWindow::~GMainWindow() {
 }
 
 void GMainWindow::createObjects() {
+    GDatabaseAccess::Instance();
     QTimer::singleShot(1000, this, SLOT(slotSingleShot()));
 }
 

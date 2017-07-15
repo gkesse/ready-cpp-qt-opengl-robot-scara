@@ -8,7 +8,7 @@ GOpenDatabase::GOpenDatabase(QWidget* parent) :
     ui->setupUi(this);
     createObjects();
     createConnexions();
-    GSplashScreen::Instance()->showMessage("GOpenDatabase : loading OpenDatabase module...");
+    GSplashScreen::Instance()->showMessage("GOpenDatabase : loading GOpenDatabase module...");
 }
 
 GOpenDatabase::~GOpenDatabase() {

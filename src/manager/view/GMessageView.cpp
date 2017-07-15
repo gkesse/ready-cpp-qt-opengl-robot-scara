@@ -13,7 +13,6 @@ GMessageView::GMessageView() :
     createObjects();
     createConnexions();
     setPosition();
-    GSplashScreen::Instance()->showMessage("GMessageView : loading MessageView module...");
 }
 
 GMessageView::~GMessageView() {
@@ -55,6 +54,11 @@ void GMessageView::showData(const QString& data, const QString& name) {
     QString m_data = data;
     if(name != "") m_data = name + " : " + data;
     ui->m_message->append(m_data);
+}
+
+void GMessageView::showData(const char* data, const QString& name) {
+    QString m_data = QString("%1").arg(data);
+    showData(m_data, name);
 }
 
 void GMessageView::showData(const bool& data, const QString& name) {

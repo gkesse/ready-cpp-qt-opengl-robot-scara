@@ -7,7 +7,7 @@ GStackedWidget::GStackedWidget(QWidget *parent) :
     ui->setupUi(this);
     createObjects();
     createConnexions();
-    GSplashScreen::Instance()->showMessage("GStackedWidget : loading StackedWidget module...");
+    GSplashScreen::Instance()->showMessage("GStackedWidget : loading GStackedWidget module...");
 }
 
 GStackedWidget::~GStackedWidget() {

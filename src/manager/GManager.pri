@@ -7,10 +7,12 @@ INCLUDEPATH += \
 HEADERS += \
     $$PWD/GPicto.h \
     $$PWD/GSplashScreen.h \
-    $$PWD/GStyle.h
+    $$PWD/GStyle.h \
+    $$PWD/GDatabaseAccess.h
 
 SOURCES += \
     $$PWD/GPicto.cpp \
     $$PWD/GSplashScreen.cpp \
-    $$PWD/GStyle.cpp
+    $$PWD/GStyle.cpp \
+    $$PWD/GDatabaseAccess.cpp
 

@@ -7,7 +7,8 @@ FORMS += \
     $$PWD/GMenu.ui \
     $$PWD/GMessageView.ui \
     $$PWD/GOpenDatabase.ui \
-    $$PWD/GStackedWidget.ui
+    $$PWD/GStackedWidget.ui \
+    $$PWD/GShowDrivers.ui
 
 HEADERS += \
     $$PWD/GCreateDatabase.h \
@@ -15,7 +16,8 @@ HEADERS += \
     $$PWD/GMenu.h \
     $$PWD/GMessageView.h \
     $$PWD/GOpenDatabase.h \
-    $$PWD/GStackedWidget.h
+    $$PWD/GStackedWidget.h \
+    $$PWD/GShowDrivers.h
 
 SOURCES += \
     $$PWD/GCreateDatabase.cpp \
@@ -23,4 +25,5 @@ SOURCES += \
     $$PWD/GMenu.cpp \
     $$PWD/GMessageView.cpp \
     $$PWD/GOpenDatabase.cpp \
-    $$PWD/GStackedWidget.cpp
+    $$PWD/GStackedWidget.cpp \
+    $$PWD/GShowDrivers.cpp
