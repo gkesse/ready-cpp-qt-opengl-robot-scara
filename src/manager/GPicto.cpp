@@ -36,3 +36,9 @@ QIcon GPicto::getPicto(const int& picto, const QColor& color) const {
     m_picto->setDefaultOption("color-active", color);
     return m_picto->icon(picto);
 }
+
+QIcon GPicto::getPicto(const QString& picto, const QColor& color) const {
+    m_picto->setDefaultOption("color", color);
+    m_picto->setDefaultOption("color-active", color);
+    return m_picto->icon(picto);
+}

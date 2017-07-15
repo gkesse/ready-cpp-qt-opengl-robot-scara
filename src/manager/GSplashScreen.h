@@ -17,6 +17,10 @@ public:
 public:
     static GSplashScreen* Instance();
 
+private:
+    void createObjects();
+    void createConnexions();
+
 public:
     void setPixmap(const QString& file);
     void setDelay(const int& delay = 5000);
@@ -26,7 +30,7 @@ public:
     
 private:
     static GSplashScreen* m_instance;
-    QSplashScreen* m_splash;
+    QSplashScreen* m_splashScreen;
     Qt::Alignment m_align;
 };
 

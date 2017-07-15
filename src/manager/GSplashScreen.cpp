@@ -5,8 +5,8 @@
 GSplashScreen* GSplashScreen::m_instance = 0;
 
 GSplashScreen::GSplashScreen() {
-    m_splash = new QSplashScreen;    
-    m_align = Qt::AlignLeft | Qt::AlignVCenter;
+    createObjects();
+    createConnexions();
 }
 
 GSplashScreen::~GSplashScreen() {
@@ -21,8 +21,18 @@ GSplashScreen* GSplashScreen::Instance() {
     return m_instance;
 }
 
+void GSplashScreen::createObjects() {
+    m_splashScreen = new QSplashScreen;
+    m_align = Qt::AlignLeft | Qt::AlignVCenter;
+
+}
+
+void GSplashScreen::createConnexions() {
+
+}
+
 void GSplashScreen::setPixmap(const QString& file) {
-    m_splash->setPixmap(QPixmap(file));
+    m_splashScreen->setPixmap(QPixmap(file));
 }
 
 void GSplashScreen::setDelay(const int& delay) {
@@ -30,14 +40,15 @@ void GSplashScreen::setDelay(const int& delay) {
 }
 
 void GSplashScreen::show() {
-    m_splash->show();
+    m_splashScreen->show();
 }
 
 void GSplashScreen::showMessage(const QString& msg, const QColor& color) {
-    m_splash->showMessage(msg, m_align, color);
+    m_splashScreen->showMessage(msg, m_align, color);
     QThread::msleep(200);
 }
 
 void GSplashScreen::finish(QWidget* mainWindow) {
-    m_splash->finish(mainWindow);
+    m_splashScreen->finish(mainWindow);
 }
+

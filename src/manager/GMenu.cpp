@@ -2,6 +2,8 @@
 #include "ui_GMenu.h"
 #include "GSplashScreen.h"
 #include "GPicto.h"
+#include "GJson.h"
+#include "GMessageView.h"
 
 GMenu::GMenu(QWidget* parent) :
     QFrame(parent), ui(new Ui::GMenu) {
@@ -17,7 +19,16 @@ GMenu::~GMenu() {
 
 void GMenu::createObjects() {
     ui->m_title->setIcon(GPicto::Instance()->getPicto(fa::book));
-    ui->m_openDatabase->setIcon(GPicto::Instance()->getPicto(fa::folderopen));
+
+    GJson::Instance()->load("../../src/res/json/menu.json");
+    QStringList m_menuName = GJson::Instance()->getArray("menu", "name");
+
+    for(int i = 0; i < m_menuName.size(); i++) {
+        QPushButton *m_button = new QPushButton;
+        m_button->setText(m_menuName.at(i));
+        m_button->setIcon(GPicto::Instance()->getPicto("book"));
+        ui->m_menuLayout->addWidget(m_button);
+    }
 }
 
 void GMenu::createConnexions() {

@@ -6,7 +6,10 @@ INCLUDEPATH += \
 FORMS += \
     $$PWD/GMainWindow.ui \
     $$PWD/GMenu.ui \
-    $$PWD/GMessageView.ui
+    $$PWD/GMessageView.ui \
+    $$PWD/GStackedWidget.ui \
+    $$PWD/GOpenDatabase.ui \
+    $$PWD/GCreateDatabase.ui
 
 HEADERS += \
     $$PWD/GMainWindow.h \
@@ -14,7 +17,11 @@ HEADERS += \
     $$PWD/GSplashScreen.h \
     $$PWD/GMenu.h \
     $$PWD/GPicto.h \
-    $$PWD/GMessageView.h
+    $$PWD/GMessageView.h \
+    $$PWD/GStackedWidget.h \
+    $$PWD/GOpenDatabase.h \
+    $$PWD/GCreateDatabase.h \
+    $$PWD/GJson.h
 
 SOURCES += \
     $$PWD/GMainWindow.cpp \
@@ -22,4 +29,8 @@ SOURCES += \
     $$PWD/GSplashScreen.cpp \
     $$PWD/GMenu.cpp \
     $$PWD/GPicto.cpp \
-    $$PWD/GMessageView.cpp
+    $$PWD/GMessageView.cpp \
+    $$PWD/GStackedWidget.cpp \
+    $$PWD/GOpenDatabase.cpp \
+    $$PWD/GCreateDatabase.cpp \
+    $$PWD/GJson.cpp

@@ -22,7 +22,8 @@ private:
     
 public:
     QIcon getPicto(const int& picto, const QColor& color = QColor("white")) const;
-    
+    QIcon getPicto(const QString& picto, const QColor& color = QColor("white")) const;
+
 private:
     static GPicto* m_instance;
     QtAwesome* m_picto;

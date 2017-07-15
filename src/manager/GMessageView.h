@@ -27,7 +27,11 @@ private:
     void setPosition();
 
 public:
-    void show(const QString& data);
+    void showData(const QString& data, const QString& name = "");
+    void showData(const bool& data, const QString& name = "");
+    void showData(const int& data, const QString& name = "");
+    void showData(const double& data, const QString& name = "");
+    void showData(const QStringList& data, const QString& name = "");
 
 public slots:
     void slotClearClicked();

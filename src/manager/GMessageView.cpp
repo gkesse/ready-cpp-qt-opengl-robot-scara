@@ -13,7 +13,6 @@ GMessageView::GMessageView() :
     createObjects();
     createConnexions();
     setPosition();
-    QWidget::show();
     GSplashScreen::Instance()->showMessage("GMessageView : loading MessageView module...");
 }
 
@@ -52,8 +51,30 @@ void GMessageView::setPosition() {
     setGeometry(m_viewX, m_viewY, m_viewW, m_viewH);
 }
 
-void GMessageView::show(const QString& data) {
-    ui->m_message->append(data);
+void GMessageView::showData(const QString& data, const QString& name) {
+    QString m_data = data;
+    if(name != "") m_data = name + " : " + data;
+    ui->m_message->append(m_data);
+}
+
+void GMessageView::showData(const bool& data, const QString& name) {
+    QString m_data = QString("%1").arg(data);
+    showData(m_data, name);
+}
+
+void GMessageView::showData(const int& data, const QString& name) {
+    QString m_data = QString("%1").arg(data);
+    showData(m_data, name);
+}
+
+void GMessageView::showData(const double& data, const QString& name) {
+    QString m_data = QString("%1").arg(data);
+    showData(m_data, name);
+}
+
+void GMessageView::showData(const QStringList& data, const QString& name) {
+    QString m_data = data.join(" ; ");
+    showData(m_data, name);
 }
 
 void GMessageView::slotClearClicked() {
