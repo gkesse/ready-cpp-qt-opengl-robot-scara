@@ -58,8 +58,44 @@ QPushButton:pressed {
     font-size: 12px;
 }
 
+/* QPushButton Default */
+QPushButton:default {
+    background: rgba(255,255,255,0.2);
+}
+
+QPushButton:default:hover {
+    background: rgba(255,255,255,0.3);
+}
+
+/* QPushButton Checked */
+QPushButton:checked {
+    background: rgba(255,255,255,0.2);
+}
+
+QPushButton:checked:hover {
+    background: rgba(255,255,255,0.3);
+}
+
+/* QPushButton Menu */
+GMenu QPushButton {
+    padding: 6px;
+    background: none;
+    border: 1px solid rgba(255,255,255,0.2);
+}
+
+GMenuQPushButton:hover {
+    background: rgba(255,255,255,0.3);
+}
+
+GMenu QPushButton:pressed {
+    background: rgba(255,255,255,0.2);
+    font-size: 14px;
+}
+
 /* QPushButton Title */
 QPushButton#m_title {
+    background: rgba(255,255,255,0.2);
+    border: none;
     font-size: 16px;
     font-weight: bold;
     text-align: center;

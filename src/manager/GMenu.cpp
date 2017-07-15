@@ -18,6 +18,7 @@ GMenu::~GMenu() {
 
 void GMenu::createObjects() {
     ui->m_title->setIcon(GPicto::Instance()->getPicto(fa::book));
+
     ui->m_create->setIcon(GPicto::Instance()->getPicto(fa::cog));
     ui->m_open->setIcon(GPicto::Instance()->getPicto(fa::folderopen));
 
@@ -25,6 +26,10 @@ void GMenu::createObjects() {
     m_signalMapper = new QSignalMapper(this);
     m_signalMapper->setMapping(ui->m_create, m_count++);
     m_signalMapper->setMapping(ui->m_open, m_count++);
+
+    m_buttonGroup = new QButtonGroup(this);
+    m_buttonGroup->addButton(ui->m_create);
+    m_buttonGroup->addButton(ui->m_open);
 }
 
 void GMenu::createConnexions() {
