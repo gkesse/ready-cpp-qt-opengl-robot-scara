@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>GShowDrivers</class>
- <widget class="QWidget" name="GShowDrivers">
+ <class>GGraphicsViewV</class>
+ <widget class="QWidget" name="GGraphicsViewV">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>GShowDrivers</string>
+   <string>GGraphicsViewV</string>
   </property>
   <layout class="QGridLayout" name="gridLayout">
    <property name="leftMargin">
@@ -38,8 +38,8 @@
       </size>
      </property>
      <layout class="QGridLayout" name="gridLayout_2">
-      <item row="2" column="0">
-       <widget class="QListView" name="m_listView"/>
+      <item row="0" column="0">
+       <widget class="GGraphicsView" name="m_graphicsView"/>
       </item>
      </layout>
     </widget>
@@ -50,12 +50,19 @@
       <cursorShape>PointingHandCursor</cursorShape>
      </property>
      <property name="text">
-      <string>Show Drivers</string>
+      <string>GraphicsView</string>
      </property>
     </widget>
    </item>
   </layout>
  </widget>
+ <customwidgets>
+  <customwidget>
+   <class>GGraphicsView</class>
+   <extends>QGraphicsView</extends>
+   <header>GGraphicsView.h</header>
+  </customwidget>
+ </customwidgets>
  <resources/>
  <connections/>
 </ui>

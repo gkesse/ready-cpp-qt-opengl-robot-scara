@@ -19,24 +19,24 @@ GMenu::~GMenu() {
 void GMenu::createObjects() {
     ui->m_title->setIcon(GPicto::Instance()->getPicto(fa::book));
 
-    ui->m_showDrivers->setIcon(GPicto::Instance()->getPicto(fa::cogs));
+    ui->m_graphicView->setIcon(GPicto::Instance()->getPicto(fa::chevronright));
     ui->m_createDatabase->setIcon(GPicto::Instance()->getPicto(fa::cog));
     ui->m_openDatabase->setIcon(GPicto::Instance()->getPicto(fa::folderopen));
 
     int m_count = 0;
     m_signalMapper = new QSignalMapper(this);
-    m_signalMapper->setMapping(ui->m_showDrivers, m_count++);
+    m_signalMapper->setMapping(ui->m_graphicView, m_count++);
     m_signalMapper->setMapping(ui->m_createDatabase, m_count++);
     m_signalMapper->setMapping(ui->m_openDatabase, m_count++);
 
     m_buttonGroup = new QButtonGroup(this);
-    m_buttonGroup->addButton(ui->m_showDrivers);
+    m_buttonGroup->addButton(ui->m_graphicView);
     m_buttonGroup->addButton(ui->m_createDatabase);
     m_buttonGroup->addButton(ui->m_openDatabase);
 }
 
 void GMenu::createConnexions() {
-    connect(ui->m_showDrivers, SIGNAL(clicked()), m_signalMapper, SLOT(map()));
+    connect(ui->m_graphicView, SIGNAL(clicked()), m_signalMapper, SLOT(map()));
     connect(ui->m_createDatabase, SIGNAL(clicked()), m_signalMapper, SLOT(map()));
     connect(ui->m_openDatabase, SIGNAL(clicked()), m_signalMapper, SLOT(map()));
     connect(m_signalMapper, SIGNAL(mapped(int)), this, SIGNAL(emitMenuClicked(int)));

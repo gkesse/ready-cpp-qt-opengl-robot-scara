@@ -34,7 +34,7 @@
      <property name="currentIndex">
       <number>0</number>
      </property>
-     <widget class="GShowDrivers" name="m_showDrivers"/>
+     <widget class="GGraphicsViewV" name="m_graphicsView"/>
      <widget class="GCreateDatabase" name="m_createDatabase"/>
      <widget class="GOpenDatabase" name="m_openDatabase"/>
     </widget>
@@ -55,9 +55,9 @@
    <container>1</container>
   </customwidget>
   <customwidget>
-   <class>GShowDrivers</class>
+   <class>GGraphicsViewV</class>
    <extends>QWidget</extends>
-   <header>GShowDrivers.h</header>
+   <header>GGraphicsViewV.h</header>
    <container>1</container>
   </customwidget>
  </customwidgets>

@@ -43,12 +43,12 @@
     <widget class="QWidget" name="widget" native="true">
      <layout class="QVBoxLayout" name="verticalLayout_2">
       <item>
-       <widget class="QPushButton" name="m_showDrivers">
+       <widget class="QPushButton" name="m_graphicView">
         <property name="cursor">
          <cursorShape>PointingHandCursor</cursorShape>
         </property>
         <property name="text">
-         <string>Show Drivers</string>
+         <string>GraphicView</string>
         </property>
         <property name="checkable">
          <bool>true</bool>
