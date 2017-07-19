@@ -12,7 +12,9 @@ HEADERS += \
     $$PWD/GGraphicsScene.h \
     $$PWD/GGraphicsPixmapItem.h \
     $$PWD/GGraphicsWidget.h \
-    $$PWD/GGraphicsView.h
+    $$PWD/GGraphicsView.h \
+    $$PWD/GJson.h \
+    $$PWD/GTypeDef.h
 
 SOURCES += \
     $$PWD/GPicto.cpp \
@@ -22,5 +24,6 @@ SOURCES += \
     $$PWD/GGraphicsScene.cpp \
     $$PWD/GGraphicsPixmapItem.cpp \
     $$PWD/GGraphicsWidget.cpp \
-    $$PWD/GGraphicsView.cpp
+    $$PWD/GGraphicsView.cpp \
+    $$PWD/GJson.cpp
 

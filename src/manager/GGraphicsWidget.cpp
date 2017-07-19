@@ -15,6 +15,7 @@ GGraphicsWidget::~GGraphicsWidget() {
 void GGraphicsWidget::createObjects() {
     setAcceptHoverEvents(true);
     setCacheMode(DeviceCoordinateCache);
+    setCursor(Qt::PointingHandCursor);
 }
 
 void GGraphicsWidget::createConnexions() {
@@ -31,40 +32,39 @@ QRectF GGraphicsWidget::boundingRect() const {
 
 QPainterPath GGraphicsWidget::shape() const {
     QPainterPath m_path;
-    m_path.addEllipse(boundingRect());
+    m_path.addRect(boundingRect());
     return m_path;
 }
 
 void GGraphicsWidget::paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget) {
-    bool down = option->state & QStyle::State_Sunken;
-    QRectF r = boundingRect();
-    QLinearGradient grad(r.topLeft(), r.bottomRight());
-    grad.setColorAt(down ? 1 : 0, option->state & QStyle::State_MouseOver ? Qt::white : Qt::lightGray);
-    grad.setColorAt(down ? 0 : 1, Qt::darkGray);
-    painter->setPen(Qt::darkGray);
-    painter->setBrush(grad);
-    painter->drawEllipse(r);
-    QLinearGradient grad2(r.topLeft(), r.bottomRight());
-    grad.setColorAt(down ? 1 : 0, Qt::darkGray);
-    grad.setColorAt(down ? 0 : 1, Qt::lightGray);
+    Q_UNUSED(widget);
+
+    bool m_mouseOver = option->state & QStyle::State_MouseOver;
+    bool m_shunken = option->state & QStyle::State_Sunken;
+    QRectF m_rect = boundingRect();
+
+    QColor m_bgColor = QColor("#051039");
+    QColor m_color = m_bgColor;
+    m_color =  m_mouseOver ? QColor("#ffffff") : m_bgColor;
+    m_color =  m_shunken ? m_bgColor : m_color;
+
     painter->setPen(Qt::NoPen);
-    painter->setBrush(grad);
-    if (down)
-        painter->translate(2, 2);
-    painter->drawEllipse(r.adjusted(5, 5, -5, -5));
+    painter->setBrush(m_color);
+    painter->drawEllipse(m_rect);
 
-    int m_pixmapW = m_pixmap.width();
-    int m_pixmapH = m_pixmap.height();
-    int m_x = -m_pixmapW/2.0;
-    int m_y = -m_pixmapH/2.0;
-
-    painter->drawPixmap(-m_x, -m_y, m_pixmap);
+    int m_x = -m_pixmap.width()/2;
+    int m_y = -m_pixmap.height()/2;
+    painter->drawPixmap(m_x, m_y, m_pixmap);
 }
 
 void GGraphicsWidget::mousePressEvent(QGraphicsSceneMouseEvent *event) {
-
+    Q_UNUSED(event);
+    update();
+    emit emitPressed();
 }
 
 void GGraphicsWidget::mouseReleaseEvent(QGraphicsSceneMouseEvent *event) {
-
+    Q_UNUSED(event);
+    update();
 }
+

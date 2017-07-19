@@ -50,6 +50,10 @@ void GMessageView::setPosition() {
     setGeometry(m_viewX, m_viewY, m_viewW, m_viewH);
 }
 
+void GMessageView::separate() {
+    ui->m_message->append("--------------------------------------------------");
+}
+
 void GMessageView::showData(const QString& data, const QString& name) {
     QString m_data = data;
     if(name != "") m_data = name + " : " + data;

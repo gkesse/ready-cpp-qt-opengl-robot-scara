@@ -24,6 +24,9 @@ protected:
     void mousePressEvent(QGraphicsSceneMouseEvent *event);
     void mouseReleaseEvent(QGraphicsSceneMouseEvent *event);
 
+signals:
+    void emitPressed();
+
 private:
     QPixmap m_pixmap;
 };

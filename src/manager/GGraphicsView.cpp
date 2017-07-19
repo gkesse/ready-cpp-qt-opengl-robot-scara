@@ -1,4 +1,5 @@
 #include "GGraphicsView.h"
+#include "GGraphicsScene.h"
 
 GGraphicsView::GGraphicsView(QWidget *parent) :
     QGraphicsView(parent) {
@@ -11,7 +12,11 @@ GGraphicsView::~GGraphicsView() {
 }
 
 void GGraphicsView::createObjects() {
-
+    GGraphicsScene* m_scene = new GGraphicsScene;
+    setScene(m_scene);
+    setViewportUpdateMode(QGraphicsView::BoundingRectViewportUpdate);
+    setCacheMode(QGraphicsView::CacheBackground);
+    setRenderHints(QPainter::Antialiasing | QPainter::SmoothPixmapTransform);
 }
 
 void GGraphicsView::createConnexions() {

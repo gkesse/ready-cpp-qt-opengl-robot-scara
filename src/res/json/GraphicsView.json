@@ -1,0 +1,18 @@
+{
+    "buttons":
+    [
+        {"name":"ellipse","img":":/img/ellipse.png","x":"-100","y":"-100"},
+        {"name":"figure8","img":":/img/figure8.png","x":"100","y":"-100"},
+        {"name":"random","img":":/img/random.png","x":"-0","y":"0"},
+        {"name":"tile","img":":/img/tile.png","x":"-100","y":"100"},
+        {"name":"centered","img":":/img/centered.png","x":"100","y":"100"}
+    ],
+    "states":
+    [
+        {"name":"ellipse"},
+        {"name":"figure8"},
+        {"name":"random"},
+        {"name":"tile"},
+        {"name":"centered"}
+    ]
+}

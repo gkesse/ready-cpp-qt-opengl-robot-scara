@@ -8,7 +8,6 @@ GDatabaseAccess* GDatabaseAccess::m_instance = 0;
 GDatabaseAccess::GDatabaseAccess() {
     createObjects();
     createConnexions();
-    GSplashScreen::Instance()->showMessage("GDatabaseAccess : loading GDatabaseAccess module...");
 }
 
 GDatabaseAccess::~GDatabaseAccess() {

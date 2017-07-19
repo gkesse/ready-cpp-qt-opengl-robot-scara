@@ -27,6 +27,7 @@ private:
     void setPosition();
 
 public:
+    void separate();
     void showData(const QString& data, const QString& name = "");
     void showData(const char* data, const QString& name = "");
     void showData(const bool& data, const QString& name = "");

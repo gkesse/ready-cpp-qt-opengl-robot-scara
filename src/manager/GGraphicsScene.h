@@ -3,6 +3,10 @@
 
 #include "GGraphicsPixmapItem.h"
 #include <QGraphicsScene>
+#include <QState>
+#include <QStateMachine>
+#include <QParallelAnimationGroup>
+#include <QGraphicsWidget>
 
 class GGraphicsScene : public QGraphicsScene {
     Q_OBJECT
@@ -14,9 +18,14 @@ public:
 private:
     void createObjects();
     void createConnexions();
+    void createTransitions();
+    void createAnimations();
 
 private:
-    QList<GGraphicsPixmapItem*> m_pixmapItems;
+    QList<GGraphicsPixmapItem*> m_pixmapList;
+    QMap<QString, QState*> m_stateMap;
+    QMap<QString, QGraphicsWidget*> m_buttonMap;
+    QParallelAnimationGroup* m_group;
 };
 
 #endif

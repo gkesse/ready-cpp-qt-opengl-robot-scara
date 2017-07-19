@@ -7,7 +7,6 @@ GPicto* GPicto::m_instance = 0;
 GPicto::GPicto() {
     createObjects();
     createConnexions();
-    GSplashScreen::Instance()->showMessage("GPicto : loading GPicto module...");
 }
 
 GPicto::~GPicto() {
