@@ -19,6 +19,10 @@ C'est une application développé et maintenu par
 
 ![ReadyView-SplashScreen](https://raw.githubusercontent.com/gkesse/ReadyView/master/img/splash.png)
 
+* **ReadyView MainWindow**
+
+![ReadyView-MainWindow](https://raw.githubusercontent.com/gkesse/ReadyView/master/img/mainwindow.png)
+
 # Technologies
 
 Le développement de l'application **ReadyView** a nécessité les technologies suivantes :
