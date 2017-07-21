@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>GMenu</class>
- <widget class="QWidget" name="GMenu">
+ <class>GGradientView</class>
+ <widget class="QWidget" name="GGradientView">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
     <width>75</width>
-    <height>43</height>
+    <height>123</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>GMenu</string>
+   <string>GGradientView</string>
   </property>
   <layout class="QGridLayout" name="gridLayout">
    <property name="leftMargin">
@@ -29,27 +29,41 @@
    <property name="spacing">
     <number>0</number>
    </property>
-   <item row="0" column="0">
+   <item row="3" column="0">
+    <widget class="QWidget" name="m_body" native="true">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>100</height>
+      </size>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_2">
+      <item row="0" column="0">
+       <widget class="GGradientLinear" name="m_gradientLinear" native="true"/>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="1" column="0">
     <widget class="QPushButton" name="m_title">
      <property name="cursor">
       <cursorShape>PointingHandCursor</cursorShape>
      </property>
      <property name="text">
-      <string>Menu</string>
+      <string>GradientView</string>
      </property>
-    </widget>
-   </item>
-   <item row="1" column="0">
-    <widget class="QWidget" name="widget" native="true">
-     <layout class="QVBoxLayout" name="verticalLayout_2">
-      <item>
-       <layout class="QVBoxLayout" name="m_menuLayout"/>
-      </item>
-     </layout>
     </widget>
    </item>
   </layout>
  </widget>
+ <customwidgets>
+  <customwidget>
+   <class>GGradientLinear</class>
+   <extends>QWidget</extends>
+   <header>GGradientLinear.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
  <resources/>
  <connections/>
 </ui>

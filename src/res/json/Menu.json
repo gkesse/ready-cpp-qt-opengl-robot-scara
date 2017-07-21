@@ -1,0 +1,7 @@
+{
+    "menu":
+    [
+        {"name":"GraphicsView"},
+        {"name":"Gradient"},
+        {"name":"ModelView"}    ]
+}

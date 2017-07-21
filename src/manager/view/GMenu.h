@@ -4,7 +4,8 @@
 #include <QWidget>
 #include <QFrame>
 #include <QSignalMapper>
-#include <QButtonGroup>
+#include <QPushButton>
+#include <QMap>
 
 namespace Ui {
 class GMenu;
@@ -27,7 +28,7 @@ signals:
 private:
     Ui::GMenu* ui;
     QSignalMapper *m_signalMapper;
-    QButtonGroup *m_buttonGroup;
+    QMap<QString, QPushButton*> m_menuMap;
 };
 
 #endif

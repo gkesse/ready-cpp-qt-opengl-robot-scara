@@ -13,5 +13,6 @@
     </qresource>
     <qresource prefix="/json">
         <file alias="GraphicsView.json">res/json/GraphicsView.json</file>
+        <file alias="Menu.json">res/json/Menu.json</file>
     </qresource>
 </RCC>

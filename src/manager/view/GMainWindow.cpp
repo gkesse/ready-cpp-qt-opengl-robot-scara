@@ -1,10 +1,10 @@
 #include "GMainWindow.h"
 #include "ui_GMainWindow.h"
 #include "GSplashScreen.h"
-#include "GMessageView.h"
-#include "GDatabaseAccess.h"
 #include <QApplication>
 #include <QTimer>
+
+#include "GMessageView.h"
 
 GMainWindow::GMainWindow(QWidget* parent) :
     QWidget(parent), ui(new Ui::GMainWindow) {
@@ -19,7 +19,6 @@ GMainWindow::~GMainWindow() {
 }
 
 void GMainWindow::createObjects() {
-    GDatabaseAccess::Instance();
     QTimer::singleShot(1000, this, SLOT(slotSingleShot()));
 }
 

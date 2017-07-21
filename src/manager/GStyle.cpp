@@ -21,7 +21,7 @@ GStyle* GStyle::Instance() {
 }
 
 void GStyle::load() {
-    QFile m_file("../../src/res/css/style.css");
+    QFile m_file(":/css/style.css");
     m_file.open(QFile::ReadOnly);
     QString m_styleSheet = QLatin1String(m_file.readAll());
     qApp->setStyleSheet(m_styleSheet);

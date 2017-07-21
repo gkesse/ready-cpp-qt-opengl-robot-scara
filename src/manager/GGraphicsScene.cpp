@@ -29,7 +29,7 @@ GGraphicsScene::~GGraphicsScene() {
 
 void GGraphicsScene::createObjects() {
     setSceneRect(-350, -350, 700, 700);
-    GJson::Instance()->load("../../src/res/json/GraphicsView.json");
+    GJson::Instance()->load(":/json/GraphicsView.json");
     GArrayMap m_dataArray;
 
     QPixmap m_pixmap(":/img/kinetic.png");

@@ -35,29 +35,29 @@
       <number>0</number>
      </property>
      <widget class="GGraphicsViewV" name="m_graphicsView"/>
-     <widget class="GCreateDatabase" name="m_createDatabase"/>
-     <widget class="GOpenDatabase" name="m_openDatabase"/>
+     <widget class="GGradientView" name="m_gradientView"/>
+     <widget class="GModelView" name="m_modelView"/>
     </widget>
    </item>
   </layout>
  </widget>
  <customwidgets>
   <customwidget>
-   <class>GOpenDatabase</class>
-   <extends>QWidget</extends>
-   <header>GOpenDatabase.h</header>
-   <container>1</container>
-  </customwidget>
-  <customwidget>
-   <class>GCreateDatabase</class>
-   <extends>QWidget</extends>
-   <header>GCreateDatabase.h</header>
-   <container>1</container>
-  </customwidget>
-  <customwidget>
    <class>GGraphicsViewV</class>
    <extends>QWidget</extends>
    <header>GGraphicsViewV.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>GGradientView</class>
+   <extends>QWidget</extends>
+   <header>GGradientView.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>GModelView</class>
+   <extends>QWidget</extends>
+   <header>GModelView.h</header>
    <container>1</container>
   </customwidget>
  </customwidgets>

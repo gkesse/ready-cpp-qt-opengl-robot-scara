@@ -156,6 +156,14 @@ GFloatWidget QPushButton:pressed {
 }
 
 /*-----------------------------------------------*/
+/* QTableView */
+/*-----------------------------------------------*/
+
+QTableView {
+    background: rgba(255,255,255,0.2);
+}
+
+/*-----------------------------------------------*/
 /* QTextEdit */
 /*-----------------------------------------------*/
 
@@ -215,9 +223,9 @@ GMessageView {
 /*-----------------------------------------------*/
 
 GMenu,
-GGraphicsView,
-GOpenDatabase,
-GCreateDatabase {
+GGraphicsViewV,
+GGradientView,
+GModelView {
     border: 1px solid rgba(255,255,255,0.2);
 }
 

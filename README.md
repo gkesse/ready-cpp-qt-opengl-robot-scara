@@ -9,19 +9,19 @@ Avec à la fois des compétences en Systèmes Embarqués et en Robotique.
 * Email : [tiakagerard@hotmail.com](mailto:tiakagerard@hotmail.com?subject=Contact&body=Bonjour "Me contactez par email")
 * Localité : **Toulouse - France**
 
-# ReadyDB
+# ReadyView
 
-**ReadyDB** est une Interface de Gestion de Bases de Données.  
+**ReadyView** est une Interface de Recueil de Vues.  
 C'est une application développé et maintenu par 
 [Gerard KESSE](http://89.80.46.24:8855/presentation/ "Accédez à mon site web (ReadyDev)").
 
-* **ReadyDB SplashScreen**
+* **ReadyView SplashScreen**
 
-![ReadyDB-SplashScreen](https://raw.githubusercontent.com/gkesse/ReadyDB/master/img/ReadyDB-SplashScreen.png)
+![ReadyView-SplashScreen](https://raw.githubusercontent.com/gkesse/ReadyView/master/img/splash.png)
 
 # Technologies
 
-Le développement de l'application **ReadyDB** a nécessité les technologies suivantes :
+Le développement de l'application **ReadyView** a nécessité les technologies suivantes :
 
 * Langages : **C/C++, SQL**
 * Interface Homme-Machine : **Qt**
