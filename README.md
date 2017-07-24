@@ -12,7 +12,7 @@ Avec à la fois des compétences en Systèmes Embarqués et en Robotique.
 # ReadyView
 
 **ReadyView** est une Interface de Recueil de Vues.  
-C'est une application développé et maintenu par 
+C'est une application développé  en C/C++/Qt et maintenu par 
 [Gerard KESSE](http://31.33.37.71:8855/presentation/ "Accédez à mon site web (ReadyDev)").
 
 * **ReadyView SplashScreen**
