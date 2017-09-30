@@ -27,6 +27,10 @@ C'est une application développé  en C/C++/Qt et maintenu par
 
 ![3D View with OpenGL](https://raw.githubusercontent.com/gkesse/ReadyView/master/img/opengl.png)
 
+* **3D View with OpenSceneGraph**
+
+![3D View with OpenSceneGraph](https://raw.githubusercontent.com/gkesse/ReadyView/master/img/osg.png)
+
 # Technologies
 
 Le développement de l'application **ReadyView** a nécessité les technologies suivantes :
