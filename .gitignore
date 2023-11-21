@@ -1,19 +1,5 @@
 #================================================
-# Windows
+# gitignore
 #================================================
 
-win/bin
-win/build
-win/release
-win/debug
-win/Makefile*
-win/*user
-
 #================================================
-# UNIX
-#================================================
-
-unix/bin
-unix/build
-unix/Makefile*
-unix/*user
